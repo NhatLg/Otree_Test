@@ -15,7 +15,7 @@ SESSION_CONFIGS = [
     {
         'name': 'bret',
         'display_name': "bret",
-        'num_demo_participants': 1,
+        'num_demo_participants': 5,
         'app_sequence': ['bret'],
     },
 ]
