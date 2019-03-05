@@ -4,6 +4,8 @@
  * @author Armin Pfurtscheller
  * @license MIT
  */
+<script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
+
 
 (function(angular){
 
