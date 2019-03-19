@@ -1,1 +1,1 @@
-simcapi.Transporter.addInitialSetupCompleteListener(function(configObject) { console.log(JSON.stringify(configObject)); });
+simcapi.Transporter.addInitialSetupCompleteListener(function(userData) { console.log(JSON.stringify(userData)); });
