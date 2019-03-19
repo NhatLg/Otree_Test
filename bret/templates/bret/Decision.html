@@ -18,16 +18,11 @@
 {# *** SCRIPTS *** #}
 {# ****************************************************************************************************************** #}
 {% block scripts %}
-    <script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
     <script src="{% static 'bret/js/angular.min.js' %}"></script>
     <script src="{% static 'bret/js/bret.js' %}"></script>
-	function init(args) {
-		console.log(JSON.stringify(args));
-		
-		let studentID = transporter.getConfig().userData.id;
-		$('.studentID').html(studentID);
-		}
-		
+    <script src="{% static 'bret/js/sparrow.js' %}"></script>
+
+
     <script>(function(angular){
         var oVars = {{ otree_vars|json }};
         try{
@@ -56,7 +51,7 @@
             // behaviour properties
             .constant("UNDOABLE", oVars.undoable)
             .constant("INPUT", oVars.input);
-            
+
         } catch(e){ console.error("Could not pass server-side settings to bomb task app!");}
     })(angular);
     </script>
@@ -145,9 +140,9 @@
                             <label>
                                 {% trans "No. of boxes to collect:" %}
 
-                                <input 
-                                    min="0" 
-                                    type="number" 
+                                <input
+                                    min="0"
+                                    type="number"
                                     class="form-control"
                                     data-ng-change="bombTaskController.select()"
                                     data-ng-disabled="bombTaskController.stopped"
@@ -183,7 +178,7 @@
                                 </span>
                             </button>
 
-                            <button 
+                            <button
                                 type="button"
                                 href="javascript:void(0)"
                                 class="btn btn-primary btn-md resolve"
