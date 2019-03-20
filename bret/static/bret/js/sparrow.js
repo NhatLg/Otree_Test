@@ -1,4 +1,3 @@
-var studentID = simcapi.Transporter.getConfig();
+var studentID = simcapi.Transporter.getConfig().userData.id;
 console.log(5+5);
 console.log(studentID);
-simcapi.Transporter.addInitialSetupCompleteListener(function(configObject) { console.log(JSON.stringify(configObject)); });
