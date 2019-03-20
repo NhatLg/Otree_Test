@@ -3,7 +3,7 @@ var simModel = new simcapi.CapiAdapter.CapiModel({
     studId: '5',
 });
 
-simcapi.CapiAdapter.expose(studId, simModel);
+simcapi.CapiAdapter.expose('studId', simModel);
 simcapi.Transporter.notifyOnReady();
 
 simModel.set('studId', simcapi.Transporter.getConfig());
