@@ -1,5 +1,2 @@
-import Transporter from 'api/snapshot/Transporter';
-
-
-let studentID = simcapi.Transporter.getConfig().userData.id;
+let studentID = simcapi.Transporter.getConfig();
 console.log(studentID);
