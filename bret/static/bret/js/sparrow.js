@@ -6,10 +6,6 @@ var subjectId = simcapi.Transporter.getConfig();
 
 console.log(subjectId);
 
-let transporter = simcapi.Transporter.getInstance();
-
-let studId = transporter.getConfig();
-
 simcapi.Transporter.addInitialSetupCompleteListener(init);
 
 function init(args) {
