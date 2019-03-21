@@ -6,7 +6,7 @@ var subjectId = simcapi.Transporter.getConfig();
 
 console.log(subjectId);
 
-let transporter = Transporter.getInstance();
+let transporter = simcapi.Transporter.getInstance();
 
 let studId = transporter.getConfig();
 console.log(studId);
