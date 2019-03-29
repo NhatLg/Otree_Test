@@ -7,6 +7,3 @@ function init(args) {
 };
 
 simcapi.Transporter.notifyOnReady();
-
-var studId2=simcapi.Transporter.getConfig().userData.id;
-console.log(studId2);
