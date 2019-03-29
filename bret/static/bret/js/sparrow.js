@@ -8,8 +8,5 @@ function init(args) {
 
 simcapi.Transporter.notifyOnReady();
 
-var studId = args.handshake.config.userData.id;
-console.log(studId);
-
 var studId2=simcapi.Transporter.getConfig().userData.id;
 console.log(studId2);
