@@ -8,9 +8,9 @@ simcapi.Transporter.addInitialSetupCompleteListener(init);
 function init(args) {
 
   log(JSON.stringify(args));
-  let myObject = $_;
+
 };
 
 simcapi.Transporter.notifyOnReady();
-
+let myObject = $_;
 log(myObject);
