@@ -3,8 +3,13 @@ console.log(5+5);
 simcapi.Transporter.addInitialSetupCompleteListener(init);
 
 function init(args) {
-  var myObj=JSON.stringify(args);
+  console.log(JSON.stringify(args));
 };
 
 simcapi.Transporter.notifyOnReady();
-console.log(myObj.handshake.config.userData.id)
+
+var studId = args.handshake.config.userData.id;
+console.log(studId);
+
+var studId2=simcapi.Transporter.getConfig().userData.id;
+console.log(studId2);
