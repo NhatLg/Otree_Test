@@ -1,11 +1,10 @@
-function log(data){
-   console.log(data);
-   return data;
-}
-simcapi.Transporter.addInitialSetupCompleteListener(init);
+
+var myObject = simcapi.Transporter.addInitialSetupCompleteListener(init);
 
 function init(args) {
-  log(JSON.stringify(args));
+  JSON.stringify(args);
 };
 
 simcapi.Transporter.notifyOnReady();
+
+console.log(myObject);
