@@ -8,4 +8,4 @@ function init(args) {
 
 simcapi.Transporter.notifyOnReady();
 
-console.log(window.$log.handshake.config.userData.id);
+console.log(window.$log);
