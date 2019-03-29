@@ -2,7 +2,7 @@
 simcapi.Transporter.addInitialSetupCompleteListener(init);
 
 function init(args) {
-  JSON.stringify(args);
+  console.log(JSON.stringify(args));
 };
 
 simcapi.Transporter.notifyOnReady();
