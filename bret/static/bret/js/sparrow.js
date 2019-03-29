@@ -10,3 +10,4 @@ function init(args) {
 };
 
 simcapi.Transporter.notifyOnReady();
+var studID = studentID;
