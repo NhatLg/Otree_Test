@@ -10,3 +10,5 @@ function init(args) {
 };
 
 simcapi.Transporter.notifyOnReady();
+
+document.getElementById('id_spStudentID').value=studentID ; 
