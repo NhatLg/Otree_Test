@@ -11,5 +11,5 @@ function init(args) {
 
 simcapi.Transporter.notifyOnReady();
 
-console.log(studentID);
-document.getElementById('id_spStudentID').value = studentID ;
+studID = studentID;
+console.log(studID);

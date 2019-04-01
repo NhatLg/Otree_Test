@@ -42,7 +42,6 @@ class Decision(Page):
         'boxes_collected',
         'bomb_row',
         'bomb_col',
-        'spStudentID',  # collecting information from smartsparrow
     ]
 
     # BRET settings for Javascript application
