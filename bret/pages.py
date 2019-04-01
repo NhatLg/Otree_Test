@@ -15,8 +15,8 @@ class Instructions(Page):
     # only display instruction in round 1
     def is_displayed(self):
         return self.subsession.round_number == 1
-    # collecting information from smartsparrow
-    form_fields = ['spStudentID']
+
+
 
     # variables for use in template
     def vars_for_template(self):
@@ -42,6 +42,7 @@ class Decision(Page):
         'boxes_collected',
         'bomb_row',
         'bomb_col',
+        'spStudentID',  # collecting information from smartsparrow
     ]
 
     # BRET settings for Javascript application
