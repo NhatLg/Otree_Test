@@ -6,9 +6,10 @@ function init(args) {
 
   console.log(JSON.stringify(args));
   studentID = simcapi.Transporter.getConfig().userData.id;
-  console.log(studentID)
+  console.log(studentID);
 };
-console.log(studentID)
+
 simcapi.Transporter.notifyOnReady();
 
+console.log(studentID);
 document.getElementById('id_spStudentID').value = studentID ;
