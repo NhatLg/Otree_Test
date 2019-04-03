@@ -11,7 +11,7 @@ from .models import Constants
 # *** CLASS INSTRUCTIONS *** #
 # ******************************************************************************************************************** #
 class Instructions(Page):
-
+    form_fields = ['studentID_input']
     # only display instruction in round 1
     def is_displayed(self):
         return self.subsession.round_number == 1
