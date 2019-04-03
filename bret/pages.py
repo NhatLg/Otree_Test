@@ -41,7 +41,7 @@ class Decision(Page):
         'boxes_collected',
         'bomb_row',
         'bomb_col',
-        'my_hidden_input',
+
     ]
 
     # BRET settings for Javascript application
