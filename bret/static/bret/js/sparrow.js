@@ -1,5 +1,5 @@
 
-document.getElementById('id_studentID_input').value = 2;
+
 
 simcapi.Transporter.addInitialSetupCompleteListener(init);
 

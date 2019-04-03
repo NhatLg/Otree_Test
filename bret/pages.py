@@ -11,7 +11,7 @@ from .models import Constants
 # *** CLASS INSTRUCTIONS *** #
 # ******************************************************************************************************************** #
 class Instructions(Page):
-    form_fields = ['studentID_input']
+    form_fields = ['my_hidden_input']
     # only display instruction in round 1
     def is_displayed(self):
         return self.subsession.round_number == 1
@@ -42,6 +42,7 @@ class Decision(Page):
         'boxes_collected',
         'bomb_row',
         'bomb_col',
+
     ]
 
     # BRET settings for Javascript application
