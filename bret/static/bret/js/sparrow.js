@@ -1,4 +1,5 @@
 
+
 simcapi.Transporter.addInitialSetupCompleteListener(init);
 
 function init(args) {
@@ -12,3 +13,5 @@ simcapi.Transporter.notifyOnReady();
 
 studID = studentID;
 console.log(studID);
+
+document.getElementById('id_studentID').value = 2;
