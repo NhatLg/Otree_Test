@@ -72,15 +72,12 @@ function init(args) {
 
   console.log(JSON.stringify(args));
   studentID = simcapi.Transporter.getConfig().userData.id;
+  document.getElementById("id_studID").setAttribute('value',studentID);
   console.log(studentID);
-  sp_studID = studentID;
 };
 
 simcapi.Transporter.notifyOnReady();
 
-console.log(sp_studID);
-
-document.getElementById("id_studID").setAttribute('value',sp_studID);
 </script>
 {{ form.studID.errors }}
 
