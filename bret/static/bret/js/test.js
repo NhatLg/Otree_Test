@@ -1,0 +1,1 @@
+document.getElementById("id_studID").setAttribute('value','33');

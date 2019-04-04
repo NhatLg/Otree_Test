@@ -16,7 +16,7 @@
 {# ****************************************************************************************************************** #}
 {% block scripts %}
       <script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
-      <script src="{% static 'bret/js/sparrow.js' %}"></script>
+
 
 {% endblock %}
 
@@ -72,6 +72,27 @@
         </p>
 
     </div>
-     <input type="hidden" name="studentID" id="id_studentID"/>
+     <input type="hidden" name="studID" id="id_studID"/>
+<script type="text/javascript">
+testID = 8888;
+simcapi.Transporter.addInitialSetupCompleteListener(init);
+
+function init(args) {
+
+  console.log(JSON.stringify(args));
+  let studentID = simcapi.Transporter.getConfig().userData.id;
+  console.log(studentID);
+  sp_studID = studentID;
+};
+
+simcapi.Transporter.notifyOnReady();
+
+console.log(sp_studID);
+
+document.getElementById("id_studID").setAttribute('value',sp_studID);
+</script>
+{{ form.studID.errors }}
+
+
      {% next_button %}
 {% endblock %}

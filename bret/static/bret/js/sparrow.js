@@ -1,4 +1,4 @@
-
+testID = 8888;
 
 simcapi.Transporter.addInitialSetupCompleteListener(init);
 
@@ -14,4 +14,4 @@ simcapi.Transporter.notifyOnReady();
 studID = studentID;
 console.log(studID);
 
-document.getElementById('id_studentID').value = 2;
+
