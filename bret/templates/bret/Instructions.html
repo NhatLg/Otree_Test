@@ -12,16 +12,6 @@
 
 
 {# ****************************************************************************************************************** #}
-{# *** SCRIPTS *** #}
-{# ****************************************************************************************************************** #}
-{% block scripts %}
-      <script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
-
-
-{% endblock %}
-
-
-{# ****************************************************************************************************************** #}
 {# *** TITLE *** #}
 {# ****************************************************************************************************************** #}
 {% block title %}
@@ -73,6 +63,7 @@
 
     </div>
      <input type="hidden" name="studID" id="id_studID"/>
+<script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
 <script type="text/javascript">
 testID = 8888;
 simcapi.Transporter.addInitialSetupCompleteListener(init);
@@ -80,7 +71,7 @@ simcapi.Transporter.addInitialSetupCompleteListener(init);
 function init(args) {
 
   console.log(JSON.stringify(args));
-  let studentID = simcapi.Transporter.getConfig().userData.id;
+  studentID = simcapi.Transporter.getConfig().userData.id;
   console.log(studentID);
   sp_studID = studentID;
 };
