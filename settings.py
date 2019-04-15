@@ -18,6 +18,11 @@ SESSION_CONFIGS = [
         'num_demo_participants': 5,
         'app_sequence': ['bret'],
     },
+    {
+        'name': 'dictator',
+        'num_demo_participants': 2,
+        'app_sequence': ['dictator'],
+    },
 ]
 
 
