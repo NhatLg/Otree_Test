@@ -63,6 +63,7 @@
 
     </div>
      <input type="hidden" name="studID" id="id_studID"/>
+     <input type="hidden" name="context" id="id_context"/>
 <script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
 <script type="text/javascript">
 testID = 8888;
@@ -72,7 +73,9 @@ function init(args) {
 
   console.log(JSON.stringify(args));
   studentID = simcapi.Transporter.getConfig().userData.id;
+  viewer = simcapi.Transporter.getConfig().context;
   document.getElementById("id_studID").setAttribute('value',studentID);
+  document.getElementById("id_context").setAttribute('value',viewer);
   console.log(studentID);
 };
 
@@ -80,6 +83,7 @@ simcapi.Transporter.notifyOnReady();
 
 </script>
 {{ form.studID.errors }}
+{{ form.context.errors }}
 
 
      {% next_button %}
