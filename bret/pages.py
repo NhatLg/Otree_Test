@@ -16,7 +16,11 @@ class Instructions(Page):
         return self.subsession.round_number == 1
 
     form_model = 'player'
-    form_fields = ['studID','context']
+    form_fields = [
+        'studID',
+        'context',
+
+    ]
 
     # variables for use in template
     def vars_for_template(self):
