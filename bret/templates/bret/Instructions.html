@@ -62,24 +62,6 @@
         </p>
 
     </div>
-     <input type="hidden" name="studID" id="id_studID"/>
-<script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
-<script type="text/javascript">
-testID = 8888;
-simcapi.Transporter.addInitialSetupCompleteListener(init);
-
-function init(args) {
-
-  console.log(JSON.stringify(args));
-  studentID = simcapi.Transporter.getConfig().context;
-  document.getElementById("id_studID").setAttribute('value',studentID);
-  console.log(studentID);
-};
-
-simcapi.Transporter.notifyOnReady();
-
-</script>
-{{ form.studID.errors }}
 
 
      {% next_button %}
