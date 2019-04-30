@@ -3,7 +3,8 @@ from .models import Constants
 
 
 class Introduction(Page):
-    pass
+    form_model = 'player'
+    form_fields = ['studID']
 
 
 class Offer(Page):

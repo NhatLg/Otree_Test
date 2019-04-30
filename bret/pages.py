@@ -15,6 +15,9 @@ class Instructions(Page):
     def is_displayed(self):
         return self.subsession.round_number == 1
 
+    form_model = 'player'
+    form_fields = ['studID']
+
     # variables for use in template
     def vars_for_template(self):
         return {
