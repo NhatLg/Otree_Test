@@ -34,7 +34,11 @@ LANGUAGE_CODE = 'en'
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
-ROOMS = []
+ROOMS = [{
+        'name': 'Test 1',
+        'display_name': 'Test 1',
+         },
+]
 
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
