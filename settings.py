@@ -37,6 +37,7 @@ USE_POINTS = True
 ROOMS = [{
         'name': 'Test1',
         'display_name': 'Test 1',
+        'participant_label_file': 'rooms/test1.txt',
          },
 ]
 
