@@ -35,7 +35,7 @@ REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
 ROOMS = [{
-        'name': 'Test 1',
+        'name': 'Test1',
         'display_name': 'Test 1',
          },
 ]
