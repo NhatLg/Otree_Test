@@ -118,10 +118,12 @@
 <button onclick="myFunction()">Click MEEE!</button>
 
 <script>
+simcapi.Transporter.addInitialSetupCompleteListener(myFunction);
 function myFunction() {
   simcapi.Transporter.triggerCheck();
 }
+simcapi.Transporter.notifyOnReady();
 </script>
-    
+
 
 {% endblock %}
