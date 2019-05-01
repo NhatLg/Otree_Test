@@ -114,7 +114,16 @@
 
     <br/>
     <script src='https://lib.smartsparrow.com/simcapi-js-3.1.0.min.js'></script>
-    <input id="clickMe" type="button" value="clickme" onclick="simcapi.Transporter.triggerCheck();" />
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#MyButton').click(function(){
+       simcapi.Transporter.triggerCheck();
+    });
+  });
+</script>
+
+<input type="button" value="Click me" id="MyButton" >
+
     {% next_button %}
 
 {% endblock %}
