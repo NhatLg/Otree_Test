@@ -45,4 +45,4 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    pass
+    studID = models.IntegerField()
