@@ -32,7 +32,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     # Collecting data form smartsparrow
-    studID = models.IntegerField(blank=True)
+    studID = models.IntegerField()
     # whether bomb is collected or not
     # store as integer because it's easier for interop with JS
     bomb = models.IntegerField()
